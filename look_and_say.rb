@@ -1,14 +1,11 @@
 class LookAndSay
   def initialize(start = 1)
     @sequence = start.to_s
-    @count = 0
   end
 
   def get
     curr_val = @sequence
     @sequence = calc_sequence
-    @count += 1
-    return curr_val.to_i if @count === 1
     curr_val.to_i
   end
 
