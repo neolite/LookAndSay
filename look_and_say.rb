@@ -18,6 +18,7 @@ class LookAndSay
     @sequence.to_s.split('').each_with_object(Array.new(0)) do |el, acc|
       acc.last && el == acc.last[:num] ? acc.last[:cnt] += 1 : acc << { num: el, cnt: 1 }
     end
-             .map { |el| "#{el[:cnt]}#{el[:num]}" }.join('')
+    .map { |el| "#{el[:cnt]}#{el[:num]}" }
+    .join('')
   end
 end
