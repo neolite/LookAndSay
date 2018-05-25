@@ -1,6 +1,6 @@
 ## Simple Look & Say sequence implementation
 
-** Usage:
+Usage:
  ```ruby
   seq = LookAndSay.new
   p seq.get # first element in sequence
